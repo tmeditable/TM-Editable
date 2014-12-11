@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TM Plugins 1.0</title>
+        <!-- 3rd Party Library -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/select2/select2.css">
+        
+        <!-- Tm library -->
+        <link rel="stylesheet" type="text/css" href="assets/css/tm_editable.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/tm_validator.css">
+
+        <!-- Custom - Not necessory -->
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+            
+    </head>
+
+    <body>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="panel panel-primary col-xs-12">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Old Editable Demos</h3>
+                  </div>
+                  <div class="panel-body">
+                   <div class="i_editable_container input-group col-xs-12" 
+                        data-iclass="name"
+                        data-ivalidate="text"
+                        data-ierror="Please Insert Valid Name.."
+                        data-iplaceholder="Enter Name..."
+                        data-key="name"
+                        >
+                        Wanna Edit Me
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="panel panel-primary col-xs-12">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">New-Optimized Editable Demos</h3>
+                  </div>
+                  <div class="panel-body">
+                   <div class="tm_editable_container input-group col-xs-12 demo0" 
+                        data-iclass="name"
+                        data-ivalidate="text"
+                        data-ierror="Please Insert Valid Name.."
+                        data-iplaceholder="Enter Name..."
+                        data-key="name"
+                        >
+                        <input type="text" value ="Wanna Edit Me" />
+                    </div>
+
+                      <div class="tm_editable_container input-group col-xs-12 demo1" 
+                        data-iclass="name"
+                        data-ivalidate="text"
+                        data-ierror="Please Insert Valid Name.."
+                        data-iplaceholder="Enter Name..."
+                        data-key="name"
+                        data-fulllength ="false"
+                        >
+                        <input type="text" value ="Wanna Edit Me2" />
+                    </div>
+
+
+                     <div class="tm_editable_container input-group col-xs-12 demo2" 
+                        data-iclass="name"
+                        data-ivalidate="text"
+                        data-ierror="Please Insert Valid Name.."
+                        data-iplaceholder="Enter Name..."
+                        data-key="name"
+                        data-remover="true"
+                        >
+                        <input type="text" value ="Wanna Edit Me3" />
+                    </div>
+
+                     <div class="tm_editable_container input-group col-xs-12 demo3" 
+                        data-iclass="name"
+                        data-ivalidate="text"
+                        data-ierror="Please Insert Valid Name.."
+                        data-iplaceholder="Enter Name..."
+                        data-key="name"
+                        data-remover="true"
+                        >
+                        <select class="my_select">
+                            <option value="0"> Option0</option>
+                            <option value="1"> Option1</option>
+                            <option value="2" selected="selected"> Option2</option>
+                            <option value="3"> Option3</option>
+                            <option value="4"> Option4</option>
+                            <option value="5"> Option5</option>
+                        </select>
+                    </div>
+
+                    <div class="tm_editable_container input-group col-xs-12 demo4" 
+                        data-iclass="name"
+                        data-ivalidate="text"
+                        data-ierror="Please Insert Valid Name.."
+                        data-iplaceholder="Enter Name..."
+                        data-key="name"
+                        data-remover="true"
+                        >
+                        <span class="checkbox_container full_row">
+                            <span class="single_checkbox full_row">
+                                <input type="checkbox" name="foo" value="bar1" id="foo_bar1">
+                                <label for="foo_bar">Bar</label>
+                            </span>
+                            
+                            <span class="single_checkbox full_row">
+                                <input type="checkbox" name="foo" value="bar2" id="foo_baz2" checked>
+                                <label for="foo_baz">Baz</label>
+                            </span>
+
+                            <span class="single_checkbox full_row">
+                                <input type="checkbox" name="foo" value="bar3" id="foo_baz2">
+                                <label for="foo_baz2">Baz2</label>
+                            </span> 
+                        </span>   
+                    </div>
+
+                    <div class="tm_editable_container input-group col-xs-12 demo5" 
+                        data-iclass="name"
+                        data-ivalidate="text"
+                        data-ierror="Please Insert Valid Name.."
+                        data-iplaceholder="Enter Name..."
+                        data-key="name"
+                        data-remover="true"
+                        >
+                        <span class="single_checkbox full_row">
+                            <input type="checkbox" name="foo" value="bar2" id="have_gmail" checked>
+                            <label for="have_gmail">Do you have gmail</label>
+                        </span>
+                    </div>
+
+                    <div class="tm_editable_container input-group col-xs-12 demo6" 
+                        data-iclass="name"
+                        data-ivalidate="text"
+                        data-ierror="Please Insert Valid Name.."
+                        data-iplaceholder="Enter Name..."
+                        data-key="name"
+                        data-remover="true"
+                        >
+                        <span class="radio_container full_row">
+                            <span class="single_radio full_row">
+                                <input type="radio" name="radio_ex" value="Gmail" id="r_demo1" checked>
+                                <label for="r_demo1">Gmail</label>
+                            </span>
+                            <span class="single_radio full_row">
+                                <input type="radio" name="radio_ex" value="Yahoo" id="r_demo2">
+                                <label for="r_demo2">Yahoo</label>
+                            </span>
+                            <span class="single_radio full_row">
+                                <input type="radio" name="radio_ex" value="Facebook" id="r_demo3">
+                                <label for="r_demo3">Facebook</label>
+                            </span>
+                        </span>
+                    </div>
+
+
+                    <div class="tm_editable_container input-group col-xs-12 demo7" 
+                        data-iclass="name"
+                        data-ivalidate="text"
+                        data-ierror="Please Insert Valid Name.."
+                        data-iplaceholder="Enter Name..."
+                        data-key="name"
+                        data-fulllength ="false"
+                        >
+                        <textarea>Detail Text Here....</textarea>
+                    </div>
+
+                 
+                  </div>
+                </div>
+
+            </div>
+        </div>
+        
+ 
+       <!-- Jquery -->
+        <script type="text/javascript" src="assets/js/jquery/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/select2/select2.js"></script>
+        
+        <!-- Tm Library -->
+        <script type="text/javascript" src="assets/js/tm_validator.js"></script>
+        <script type="text/javascript" src="assets/js/tm_editable.js"></script>
+        <script type="text/javascript" src="assets/js/tm_editable_new.js"></script>
+
+        <!-- Initialize Editable -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                
+                $('.i_editable_container').each(function(){
+                  input_val = $(this).text();
+                  i_editable_container(this,input_val);
+               });
+
+                // $('.tm_editable_container').each(function(){
+                //     $(this).tm_editbale('init',{
+                //         ok:
+                //         {
+                //             after: function(){
+                //                 //alert('after ok');
+                //             },
+                //             before: function(){
+                //                 //alert('Start');
+                //                 var deferred = $.Deferred();
+                //                 $.ajax({
+                //                       url: "test.php"
+                //                     }).done(function() {
+                //                         deferred.resolve();
+                //                     }).fail(function(){
+                //                         deferred.resolve();
+                //                     });
+                //               return deferred.promise();
+                //             }
+                //         }
+                //         ,
+                //         remove:
+                //         {
+                //             after: function(){
+                //                 //alert('after ok');
+                //             },
+                //             before: function(){
+                //                 var deferred = $.Deferred();
+                //                 $.ajax({
+                //                       url: "test.php"
+                //                     }).done(function() {
+                //                         deferred.resolve();
+                //                     }).fail(function(){
+                //                         deferred.resolve();
+                //                     });
+                //               return deferred.promise();
+                //             }
+                //         }
+                //     });
+                // });
+
+                 
+                    $('.demo1').tm_editbale('init',{
+                        ok:
+                        {
+                            after: function(){
+                                //alert('after ok');
+                            },
+                            before: function(){
+                                alert('Demo1');
+                                var deferred = $.Deferred();
+                                $.ajax({
+                                      url: "test.php"
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        }
+                        ,
+                        remove:
+                        {
+                            after: function(){
+                                //alert('after ok');
+                            },
+                            before: function(){
+                                var deferred = $.Deferred();
+                                $.ajax({
+                                      url: "test.php"
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        }
+                    });
+                    
+                    $('.demo2').tm_editbale('init',{
+                        ok:
+                        {
+                            after: function(){
+                                //alert('after ok');
+                            },
+                            before: function(){
+                                alert('Demo2');
+                                var deferred = $.Deferred();
+                                $.ajax({
+                                      url: "test.php"
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        }
+                        ,
+                        remove:
+                        {
+                            after: function(){
+                                //alert('after ok');
+                            },
+                            before: function(){
+                                var deferred = $.Deferred();
+                                $.ajax({
+                                      url: "test.php"
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        }
+                    });
+                    
+                    $('.demo3').tm_editbale('init',{
+                        ok:
+                        {
+                            after: function(){
+                                //alert('after ok');
+                            },
+                            before: function(){
+                                var deferred = $.Deferred();
+                                $.ajax({
+                                      url: "test.php"
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        }
+                        ,
+                        remove:
+                        {
+                            after: function(){
+                                //alert('after ok');
+                            },
+                            before: function(){
+                                var deferred = $.Deferred();
+                                $.ajax({
+                                      url: "test.php"
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        },
+                        init:
+                        {
+                            before:function(){
+                            },
+                            after:function(){
+                                $('.my_select').select2();
+                            }
+                        }
+                    });
+
+                    $('.demo0').tm_editbale('init',{ });
+                    $('.demo4').tm_editbale('init',{ });
+                    $('.demo6').tm_editbale('init',{ });
+                    $('.demo7').tm_editbale('init',{ });
+
+                    $('.demo5').tm_editbale('init',{
+                        ok:
+                        {
+                            after: function(){
+                                //alert('after ok');
+                            },
+                            before: function(){
+                                var deferred = $.Deferred();
+                                $.ajax({
+                                      url: "test.php"
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        }
+                        ,
+                        remove:
+                        {
+                            after: function(){
+                                //alert('after ok');
+                            },
+                            before: function(){
+                                var deferred = $.Deferred();
+                                $.ajax({
+                                      url: "test.php"
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        },
+                        init:
+                        {
+                            before:function(){
+                            },
+                            after:function(){
+                            }
+                        }
+                    });
+                
+
+            });
+        </script>
+    </body>
+</html>

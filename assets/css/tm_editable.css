@@ -1,0 +1,92 @@
+/*I Editable START*/
+.full_row
+{
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+}
+.i_text, .i_edit, .i_subtask
+{
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.just_edit
+{
+  display: none;
+}
+.i_edit_input
+{
+  float: left;
+  padding-left: 5px !important;
+}
+.i_editable_checkbox .ibtn_container
+{
+  margin-top: 0
+}
+.i_ok, .i_cancel
+{
+  margin:0 5px;
+}
+.i_ok
+{
+  color:green;
+}
+.i_cancel, .i_remover, .delete_feed, .color_red
+{
+  color: red
+}
+.delete_feed
+{
+  padding-left: 7px;
+}
+.just_edit .input-group
+{
+  width: 100% !important; 
+}
+.i_remover
+{
+  margin-left: 10px;
+}
+.i_subtask
+{
+  margin-right: 10px;
+}
+.i_loading
+{
+  position: absolute;
+  background: rgba(225,225,225,0.8);
+  color: #555;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+}
+.i_edit
+{
+  color: #ccc;
+}
+.i_edit_text
+{
+  display: none;
+}
+.no_edit:hover .i_edit
+{
+  color: #003C66
+}
+.no_edit:hover .i_edit_text
+{
+  display: inline;
+}
+.no_edit
+{
+  cursor: pointer;
+}
+.no_edit:hover
+{
+  background: #eee
+}
+/*I Editable END*/
