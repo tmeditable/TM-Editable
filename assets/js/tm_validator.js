@@ -14,6 +14,10 @@ function validate(container_id) {
         {
             method = 'textarea';
         }
+        else{
+            method = null;
+             valid_type = 'nullable';
+        }
 
         if(method == 'text')
         {
@@ -84,7 +88,6 @@ function validate(container_id) {
                     $('.pt-wrapper').css('height',y_h);                 
                 }
         }
-        console.log(input_val);
     });
     return final_answer;
 }

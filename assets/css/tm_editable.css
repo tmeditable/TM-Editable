@@ -84,6 +84,7 @@
 .no_edit
 {
   cursor: pointer;
+  padding: 10px;
 }
 .no_edit:hover
 {

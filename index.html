@@ -8,6 +8,8 @@
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/font-awesome/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/select2/select2.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/uniform/agent/css/uniform.agent.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/uniform/aristo/css/uniform.aristo.min.css">
         
         <!-- Tm library -->
         <link rel="stylesheet" type="text/css" href="assets/css/tm_editable.css">
@@ -22,166 +24,508 @@
         
         <div class="container-fluid">
             <div class="row">
-                <div class="panel panel-primary col-xs-12">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Old Editable Demos</h3>
-                  </div>
-                  <div class="panel-body">
-                   <div class="i_editable_container input-group col-xs-12" 
-                        data-iclass="name"
-                        data-ivalidate="text"
-                        data-ierror="Please Insert Valid Name.."
-                        data-iplaceholder="Enter Name..."
-                        data-key="name"
-                        >
-                        Wanna Edit Me
-                    </div>
-                  </div>
-                </div>
-
+                
+                <!-- First Panel Start -->
                  <div class="panel panel-primary col-xs-12">
                   <div class="panel-heading">
-                    <h3 class="panel-title">New-Optimized Editable Demos</h3>
+                    <h3 class="panel-title">Editable Demos</h3>
                   </div>
                   <div class="panel-body">
-                   <div class="tm_editable_container input-group col-xs-12 demo0" 
-                        data-iclass="name"
-                        data-ivalidate="text"
-                        data-ierror="Please Insert Valid Name.."
-                        data-iplaceholder="Enter Name..."
-                        data-key="name"
-                        >
-                        <input type="text" value ="Wanna Edit Me" />
-                    </div>
+                      <div class="table-responsive">
+                        <table class="table  table-striped table-bordered">
+                            <tr>
+                                <th class="col-xs-3">
+                                    Element
+                                </th class="col-xs-9">
+                                <th>
+                                    Demo
+                                </th>
+                            </tr>
 
-                      <div class="tm_editable_container input-group col-xs-12 demo1" 
-                        data-iclass="name"
-                        data-ivalidate="text"
-                        data-ierror="Please Insert Valid Name.."
-                        data-iplaceholder="Enter Name..."
-                        data-key="name"
-                        data-fulllength ="false"
-                        >
-                        <input type="text" value ="Wanna Edit Me2" />
-                    </div>
+                            <tr>
+                                <td>
+                                    Input Text
+                                </td>
+                                <td>
+                                    <div class="tm_editable_container input-group col-xs-12"
+                                        id="text_demo" 
+                                        data-iclass="name"
+                                        data-ivalidate="text"
+                                        data-ierror="Please Insert Valid Name.."
+                                        data-iplaceholder="Enter Name..."
+                                        data-key="name"
+                                        >
+                                        <input type="text" value ="Wanna Edit Me" />
+                                    </div>
+                                </td>
+                            </tr>
 
+                            <tr>
+                                <td>
+                                    Textarea
+                                </td>
+                                <td>
+                                    <div class="tm_editable_container input-group"
+                                        id="textarea_demo" 
+                                        data-iclass="name"
+                                        data-ivalidate="text"
+                                        data-ierror="Please Insert Valid Name.."
+                                        data-iplaceholder="Enter Name..."
+                                        data-key="name"
+                                        >
+                                        <textarea>Detail Text Here</textarea>
+                                    </div>
+                                </td>
+                            </tr>
 
-                     <div class="tm_editable_container input-group col-xs-12 demo2" 
-                        data-iclass="name"
-                        data-ivalidate="text"
-                        data-ierror="Please Insert Valid Name.."
-                        data-iplaceholder="Enter Name..."
-                        data-key="name"
-                        data-remover="true"
-                        >
-                        <input type="text" value ="Wanna Edit Me3" />
-                    </div>
+                            <tr>
+                                <td>
+                                    Radio
+                                </td>
+                                <td>
+                                    <div class="tm_editable_container input-group"
+                                        id="radio_demo" 
+                                        data-iclass="name"
+                                        data-ivalidate="text"
+                                        data-ierror="Please Insert Valid Name.."
+                                        data-iplaceholder="Enter Name..."
+                                        data-key="name"
+                                        >
+                                            <span class="radio_container full_row">
+                                                <span class="single_radio full_row">
+                                                    <input type="radio" name="radio_ex" value="Gmail" id="r_demo1" checked>
+                                                    <label for="r_demo1">Gmail</label>
+                                                </span>
+                                                <span class="single_radio full_row">
+                                                    <input type="radio" name="radio_ex" value="Yahoo" id="r_demo2">
+                                                    <label for="r_demo2">Yahoo</label>
+                                                </span>
+                                                <span class="single_radio full_row">
+                                                    <input type="radio" name="radio_ex" value="Facebook" id="r_demo3">
+                                                    <label for="r_demo3">Facebook</label>
+                                                </span>
+                                            </span>
+                                    </div>
+                                </td>
+                            </tr>
 
-                     <div class="tm_editable_container input-group col-xs-12 demo3" 
-                        data-iclass="name"
-                        data-ivalidate="text"
-                        data-ierror="Please Insert Valid Name.."
-                        data-iplaceholder="Enter Name..."
-                        data-key="name"
-                        data-remover="true"
-                        >
-                        <select class="my_select">
-                            <option value="0"> Option0</option>
-                            <option value="1"> Option1</option>
-                            <option value="2" selected="selected"> Option2</option>
-                            <option value="3"> Option3</option>
-                            <option value="4"> Option4</option>
-                            <option value="5"> Option5</option>
-                        </select>
-                    </div>
+                            <tr>
+                                <td>
+                                    Checkbox
+                                </td>
+                                <td>
+                                    <div class="tm_editable_container input-group"
+                                        id="checkbox_demo" 
+                                        data-iclass="name"
+                                        data-ivalidate="text"
+                                        data-ierror="Please Insert Valid Name.."
+                                        data-iplaceholder="Enter Name..."
+                                        data-key="name"
+                                        >
+                                            <span class="single_checkbox full_row">
+                                                <input type="checkbox" name="foo" value="bar2" id="have_gmail" checked>
+                                                <label for="have_gmail">Do you have gmail</label>
+                                            </span>
+                                    </div>
+                                </td>
+                            </tr>
 
-                    <div class="tm_editable_container input-group col-xs-12 demo4" 
-                        data-iclass="name"
-                        data-ivalidate="text"
-                        data-ierror="Please Insert Valid Name.."
-                        data-iplaceholder="Enter Name..."
-                        data-key="name"
-                        data-remover="true"
-                        >
-                        <span class="checkbox_container full_row">
-                            <span class="single_checkbox full_row">
-                                <input type="checkbox" name="foo" value="bar1" id="foo_bar1">
-                                <label for="foo_bar">Bar</label>
-                            </span>
+                            <tr>
+                                <td>
+                                    Select
+                                </td>
+                                <td>
+                                    <div class="tm_editable_container input-group"
+                                        id="select_demo" 
+                                        data-iclass="name"
+                                        data-ivalidate="text"
+                                        data-ierror="Please Insert Valid Name.."
+                                        data-iplaceholder="Enter Name..."
+                                        data-key="name"
+                                        >
+                                            <select class="my_select">
+                                                <option value="0"> Option0</option>
+                                                <option value="1"> Option1</option>
+                                                <option value="2" selected="selected"> Option2</option>
+                                                <option value="3"> Option3</option>
+                                                <option value="4"> Option4</option>
+                                                <option value="5"> Option5</option>
+                                            </select>
+                                    </div>
+                                </td>
+                            </tr>
                             
-                            <span class="single_checkbox full_row">
-                                <input type="checkbox" name="foo" value="bar2" id="foo_baz2" checked>
-                                <label for="foo_baz">Baz</label>
-                            </span>
 
-                            <span class="single_checkbox full_row">
-                                <input type="checkbox" name="foo" value="bar3" id="foo_baz2">
-                                <label for="foo_baz2">Baz2</label>
-                            </span> 
-                        </span>   
+                        </table>
+
                     </div>
-
-                    <div class="tm_editable_container input-group col-xs-12 demo5" 
-                        data-iclass="name"
-                        data-ivalidate="text"
-                        data-ierror="Please Insert Valid Name.."
-                        data-iplaceholder="Enter Name..."
-                        data-key="name"
-                        data-remover="true"
-                        >
-                        <span class="single_checkbox full_row">
-                            <input type="checkbox" name="foo" value="bar2" id="have_gmail" checked>
-                            <label for="have_gmail">Do you have gmail</label>
-                        </span>
-                    </div>
-
-                    <div class="tm_editable_container input-group col-xs-12 demo6" 
-                        data-iclass="name"
-                        data-ivalidate="text"
-                        data-ierror="Please Insert Valid Name.."
-                        data-iplaceholder="Enter Name..."
-                        data-key="name"
-                        data-remover="true"
-                        >
-                        <span class="radio_container full_row">
-                            <span class="single_radio full_row">
-                                <input type="radio" name="radio_ex" value="Gmail" id="r_demo1" checked>
-                                <label for="r_demo1">Gmail</label>
-                            </span>
-                            <span class="single_radio full_row">
-                                <input type="radio" name="radio_ex" value="Yahoo" id="r_demo2">
-                                <label for="r_demo2">Yahoo</label>
-                            </span>
-                            <span class="single_radio full_row">
-                                <input type="radio" name="radio_ex" value="Facebook" id="r_demo3">
-                                <label for="r_demo3">Facebook</label>
-                            </span>
-                        </span>
-                    </div>
+                   </div>
+               </div>
+               <!-- First Panel End -->
 
 
-                    <div class="tm_editable_container input-group col-xs-12 demo7" 
-                        data-iclass="name"
-                        data-ivalidate="text"
-                        data-ierror="Please Insert Valid Name.."
-                        data-iplaceholder="Enter Name..."
-                        data-key="name"
-                        data-fulllength ="false"
-                        >
-                        <textarea>Detail Text Here....</textarea>
-                    </div>
+               <!-- Second Panel Start -->
 
-                 
-                  </div>
+                   <div class="panel panel-primary col-xs-12">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Other Features</h3>
+                        </div>
+                        <div class="panel-body">
+                              <div class="table-responsive">
+                                <table class="table  table-striped table-bordered">
+                                    <tr>
+                                        <th class="col-xs-3">
+                                            Title
+                                        </th>
+                                        <th class="col-xs-9">
+                                            Demo
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Apply external plugin
+                                        </td>
+                                        <td>
+                                            <div class="list-group">
+                                            <span class="list-group-item active">
+                                                <p class="list-group-item-text">
+                                                    You can apply any jquery plugin for your input element.       
+                                                </p>
+                                            </span>
+
+                                              <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Select2 Plugin</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group"
+                                                        id="select2_demo" 
+                                                        data-iclass="name"
+                                                        data-ivalidate="text"
+                                                        data-ierror="Please Insert Valid Name.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <select class="my_select2">
+                                                                <option value="0"> Option0</option>
+                                                                <option value="1"> Option1</option>
+                                                                <option value="2" selected="selected"> Option2</option>
+                                                                <option value="3"> Option3</option>
+                                                                <option value="4"> Option4</option>
+                                                                <option value="5"> Option5</option>
+                                                            </select>
+                                                    </div> 
+                                                </p>
+                                              </span>
+
+                                              <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Uniform Plugin</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group"
+                                                        id="unifrom_checkbox_demo" 
+                                                        data-iclass="name"
+                                                        data-ierror="Please Insert Valid Name.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <span class="single_checkbox full_row">
+                                                                <input type="checkbox" name="foo" value="bar2" id="have_uniform" checked>
+                                                                <label for="have_uniform">Uniform Checkbox</label>
+                                                            </span>
+                                                    </div> 
+
+                                                    <div class="tm_editable_container input-group"
+                                                        id="uniform_radio_demo" 
+                                                        data-iclass="name"
+                                                        data-ierror="Please Insert Valid Name.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <span class="radio_container full_row">
+                                                                <span class="single_radio full_row">
+                                                                    <input class="uni_radio" type="radio" name="uni_radio_ex" value="uni1" 
+                                                                        id="uni_r_demo1" checked>
+                                                                    <label for="uni_r_demo1">Uni - 1</label>
+                                                                </span>
+                                                                <span class="single_radio full_row">
+                                                                    <input class="uni_radio" type="radio" name="uni_radio_ex" value="uni2" id="uni_r_demo2">
+                                                                    <label for="uni_r_demo2">uni - 2</label>
+                                                                </span>
+                                                            </span>
+                                                    </div>
+
+                                                    <div class="tm_editable_container input-group"
+                                                        id="uniform_select_demo" 
+                                                        data-iclass="name"
+                                                        data-ierror="Please Insert Valid Name.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <select class="my_select3">
+                                                                <option value="0"> Option0</option>
+                                                                <option value="1"  selected="selected"> Option1</option>
+                                                                <option value="2"> Option2</option>
+                                                                <option value="3"> Option3</option>
+                                                                <option value="4"> Option4</option>
+                                                                <option value="5"> Option5</option>
+                                                            </select>
+                                                    </div>
+
+                                                </p>
+                                              </span>
+
+
+                                                
+                                                
+
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td>
+                                            Validation
+                                        </td>
+                                        <td>
+                                            <div class="list-group">
+                                            <span class="list-group-item active">
+                                                <p class="list-group-item-text">
+                                                    tmEditable provides you some validation functionality      
+                                                </p>
+                                            </span>
+                                            
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Required Text box</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group required_box_demo"
+                                                        data-iclass="name"
+                                                        data-ivalidate="text"
+                                                        data-ierror="Please Insert Valid info.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <input type="text" value ="Make me clear">
+                                                    </div> 
+                                                </p>
+                                            </span>
+
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Email Validation</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group required_box_demo"
+                                                        data-iclass="name"
+                                                        data-ivalidate="email"
+                                                        data-ierror="Please Insert Valid info.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <input type="text" value ="demo@demo.com">
+                                                    </div> 
+                                                </p>
+                                            </span>
+
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Number Validation</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group required_box_demo"
+                                                        data-iclass="name"
+                                                        data-ivalidate="number"
+                                                        data-ierror="Please Insert Valid info.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <input type="text" value ="5">
+                                                    </div> 
+                                                </p>
+                                            </span>
+
+                                              <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Required Select box</h4>
+                                                    <p class="list-group-item-text">
+                                                       <div class="tm_editable_container input-group required_box_demo"
+                                                            data-iclass="name"
+                                                            data-ivalidate="text"
+                                                            data-ierror="Please Select Valid Option.."
+                                                            data-iplaceholder="Enter Name..."
+                                                            data-key="name"
+                                                            >
+                                                                <select class="my_select">
+                                                                    <option value="">No Selection</option>
+                                                                    <option value="1"> Option1</option>
+                                                                    <option value="2" selected="selected"> Option2</option>
+                                                                    <option value="3"> Option3</option>
+                                                                    <option value="4"> Option4</option>
+                                                                    <option value="5"> Option5</option>
+                                                                </select>
+                                                        </div> 
+                                                    </p>
+                                              </span>
+
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Custom Function on submit
+                                        </td>
+                                        <td>
+                                            <div class="list-group">
+                                            <span class="list-group-item active">
+                                                <p class="list-group-item-text">
+                                                    You can execute custom function before or after submit     
+                                                </p>
+                                            </span>
+                                            
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Before alert</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group before_alert_demo"
+                                                        data-iclass="name"
+                                                        data-ivalidate="text"
+                                                        data-ierror="Please Insert Valid info.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <input type="text" value ="Hello World">
+                                                    </div> 
+                                                </p>
+                                            </span>
+
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">After alert</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group after_alert_demo"
+                                                        data-iclass="name"
+                                                        data-ivalidate="text"
+                                                        data-ierror="Please Insert Valid info.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <input type="text" value ="Hello World">
+                                                    </div> 
+                                                </p>
+                                            </span>
+
+                                             <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Post ajax request</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group post_alert_demo"
+                                                        data-iclass="name"
+                                                        data-ivalidate="text"
+                                                        data-ierror="Please Insert Valid info.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        >
+                                                            <input type="text" value ="Hello World">
+                                                    </div> 
+                                                </p>
+                                            </span>
+
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Remover
+                                        </td>
+                                        <td>
+                                            <div class="list-group">
+                                            <span class="list-group-item active">
+                                                <p class="list-group-item-text">
+                                                    Remove the element and execute custom function before or after remove action.     
+                                                </p>
+                                            </span>
+                                            
+                                            <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Before Remove</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group before_remover_demo"
+                                                        data-iclass="name"
+                                                        data-ivalidate="text"
+                                                        data-ierror="Please Insert Valid info.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        data-remover="true"
+                                                        >
+                                                            <input type="text" value ="Hello World">
+                                                    </div> 
+                                                </p>
+                                            </span>
+
+                                             <span class="list-group-item">
+                                                <h4 class="list-group-item-heading">Before Remove</h4>
+                                                <p class="list-group-item-text">
+                                                   <div class="tm_editable_container input-group after_remover_demo"
+                                                        data-iclass="name"
+                                                        data-ivalidate="text"
+                                                        data-ierror="Please Insert Valid info.."
+                                                        data-iplaceholder="Enter Name..."
+                                                        data-key="name"
+                                                        data-remover="true"
+                                                        >
+                                                            <input type="text" value ="Hello World">
+                                                    </div> 
+                                                </p>
+                                            </span>
+
+                                            
+
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Auto Width
+                                        </td>
+                                        <td>
+                                            <div class="list-group">
+                                                <span class="list-group-item active">
+                                                    <p class="list-group-item-text">
+                                                        Width auto     
+                                                    </p>
+                                                </span>
+                                                
+                                                <span class="list-group-item">
+                                                    <h4 class="list-group-item-heading">Width Auto</h4>
+                                                    <p class="list-group-item-text">
+                                                       <div class="tm_editable_container input-group width_auto_demo"
+                                                            data-iclass="name"
+                                                            data-ivalidate="text"
+                                                            data-ierror="Please Insert Valid info.."
+                                                            data-iplaceholder="Enter Name..."
+                                                            data-key="name"
+                                                            data-full-length = "false"
+                                                            >
+                                                                <input type="text" value ="Hello World">
+                                                        </div> 
+                                                    </p>
+                                                </span>
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+
+
+                                </table>
+                            </div>
+                        </div>            
+                    </div>  
+                    <!-- Second Panel End -->  
+                
                 </div>
-
             </div>
-        </div>
-        
+      
  
        <!-- Jquery -->
         <script type="text/javascript" src="assets/js/jquery/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="assets/js/select2/select2.js"></script>
+        <script type="text/javascript" src="assets/js/uniform/jquery.uniform.min.js"></script>
         
         <!-- Tm Library -->
         <script type="text/javascript" src="assets/js/tm_validator.js"></script>
@@ -192,226 +536,115 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 
-                $('.i_editable_container').each(function(){
-                  input_val = $(this).text();
-                  i_editable_container(this,input_val);
-               });
-
-                // $('.tm_editable_container').each(function(){
-                //     $(this).tm_editbale('init',{
-                //         ok:
-                //         {
-                //             after: function(){
-                //                 //alert('after ok');
-                //             },
-                //             before: function(){
-                //                 //alert('Start');
-                //                 var deferred = $.Deferred();
-                //                 $.ajax({
-                //                       url: "test.php"
-                //                     }).done(function() {
-                //                         deferred.resolve();
-                //                     }).fail(function(){
-                //                         deferred.resolve();
-                //                     });
-                //               return deferred.promise();
-                //             }
-                //         }
-                //         ,
-                //         remove:
-                //         {
-                //             after: function(){
-                //                 //alert('after ok');
-                //             },
-                //             before: function(){
-                //                 var deferred = $.Deferred();
-                //                 $.ajax({
-                //                       url: "test.php"
-                //                     }).done(function() {
-                //                         deferred.resolve();
-                //                     }).fail(function(){
-                //                         deferred.resolve();
-                //                     });
-                //               return deferred.promise();
-                //             }
-                //         }
-                //     });
-                // });
-
-                 
-                    $('.demo1').tm_editbale('init',{
-                        ok:
-                        {
-                            after: function(){
-                                //alert('after ok');
-                            },
-                            before: function(){
-                                alert('Demo1');
-                                var deferred = $.Deferred();
-                                $.ajax({
-                                      url: "test.php"
-                                    }).done(function() {
-                                        deferred.resolve();
-                                    }).fail(function(){
-                                        deferred.resolve();
-                                    });
-                              return deferred.promise();
-                            }
-                        }
-                        ,
-                        remove:
-                        {
-                            after: function(){
-                                //alert('after ok');
-                            },
-                            before: function(){
-                                var deferred = $.Deferred();
-                                $.ajax({
-                                      url: "test.php"
-                                    }).done(function() {
-                                        deferred.resolve();
-                                    }).fail(function(){
-                                        deferred.resolve();
-                                    });
-                              return deferred.promise();
-                            }
-                        }
-                    });
-                    
-                    $('.demo2').tm_editbale('init',{
-                        ok:
-                        {
-                            after: function(){
-                                //alert('after ok');
-                            },
-                            before: function(){
-                                alert('Demo2');
-                                var deferred = $.Deferred();
-                                $.ajax({
-                                      url: "test.php"
-                                    }).done(function() {
-                                        deferred.resolve();
-                                    }).fail(function(){
-                                        deferred.resolve();
-                                    });
-                              return deferred.promise();
-                            }
-                        }
-                        ,
-                        remove:
-                        {
-                            after: function(){
-                                //alert('after ok');
-                            },
-                            before: function(){
-                                var deferred = $.Deferred();
-                                $.ajax({
-                                      url: "test.php"
-                                    }).done(function() {
-                                        deferred.resolve();
-                                    }).fail(function(){
-                                        deferred.resolve();
-                                    });
-                              return deferred.promise();
-                            }
-                        }
-                    });
-                    
-                    $('.demo3').tm_editbale('init',{
-                        ok:
-                        {
-                            after: function(){
-                                //alert('after ok');
-                            },
-                            before: function(){
-                                var deferred = $.Deferred();
-                                $.ajax({
-                                      url: "test.php"
-                                    }).done(function() {
-                                        deferred.resolve();
-                                    }).fail(function(){
-                                        deferred.resolve();
-                                    });
-                              return deferred.promise();
-                            }
-                        }
-                        ,
-                        remove:
-                        {
-                            after: function(){
-                                //alert('after ok');
-                            },
-                            before: function(){
-                                var deferred = $.Deferred();
-                                $.ajax({
-                                      url: "test.php"
-                                    }).done(function() {
-                                        deferred.resolve();
-                                    }).fail(function(){
-                                        deferred.resolve();
-                                    });
-                              return deferred.promise();
-                            }
-                        },
-                        init:
-                        {
-                            before:function(){
-                            },
+                $('#text_demo').tm_editbale('init',{});
+                $('#textarea_demo').tm_editbale('init',{});
+                $('#radio_demo').tm_editbale('init',{});
+                $('#checkbox_demo').tm_editbale('init',{});
+                $('#select_demo').tm_editbale('init',{});
+                $('.width_auto_demo').tm_editbale('init',{});
+                $('#select2_demo').tm_editbale('init',{
+                    init:{
+                            before:function(){},
                             after:function(){
-                                $('.my_select').select2();
+                                $('.my_select2').select2();
                             }
                         }
-                    });
-
-                    $('.demo0').tm_editbale('init',{ });
-                    $('.demo4').tm_editbale('init',{ });
-                    $('.demo6').tm_editbale('init',{ });
-                    $('.demo7').tm_editbale('init',{ });
-
-                    $('.demo5').tm_editbale('init',{
-                        ok:
-                        {
-                            after: function(){
-                                //alert('after ok');
-                            },
-                            before: function(){
-                                var deferred = $.Deferred();
-                                $.ajax({
-                                      url: "test.php"
-                                    }).done(function() {
-                                        deferred.resolve();
-                                    }).fail(function(){
-                                        deferred.resolve();
-                                    });
-                              return deferred.promise();
-                            }
-                        }
-                        ,
-                        remove:
-                        {
-                            after: function(){
-                                //alert('after ok');
-                            },
-                            before: function(){
-                                var deferred = $.Deferred();
-                                $.ajax({
-                                      url: "test.php"
-                                    }).done(function() {
-                                        deferred.resolve();
-                                    }).fail(function(){
-                                        deferred.resolve();
-                                    });
-                              return deferred.promise();
-                            }
-                        },
-                        init:
-                        {
-                            before:function(){
-                            },
+                });
+                $('#unifrom_checkbox_demo').tm_editbale('init',{
+                    init:{
+                            before:function(){},
                             after:function(){
+                                $('#have_uniform').uniform();
                             }
                         }
-                    });
+                });
+
+                $('#uniform_radio_demo').tm_editbale('init',{
+                    init:{
+                            before:function(){},
+                            after:function(){
+                                $('.uni_radio').uniform();
+                            }
+                        }
+                });
+
+                 $('#uniform_select_demo').tm_editbale('init',{
+                    init:{
+                            before:function(){},
+                            after:function(){
+                                $('.my_select3').uniform();
+                            }
+                        }
+                });
+
+                $('.required_box_demo').tm_editbale('init',{}); 
+
+                 $('.before_alert_demo').tm_editbale('init',{
+                    ok:{
+                            before:function(){
+                                deferred = $.Deferred();
+                                alert('Before Alert');
+                                deferred.resolve();
+                                return deferred.promise();
+                            }
+                        }
+                });
+
+                 $('.after_alert_demo').tm_editbale('init',{
+                    ok:{
+                            after:function(){
+                                alert('After Alert');
+                            }
+                        }
+                });
+
+                $('.post_alert_demo').tm_editbale('init',{
+                    ok:{
+                            before:function(current_value){
+                                var deferred = $.Deferred();
+                                $.ajax({
+                                        type:"Post",
+                                      url: "test.php",
+                                      data:{'info':current_value}
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        }
+                });
+
+                $('.before_remover_demo').tm_editbale('init',{
+                    remove:{
+                            before:function(){
+                                var deferred = $.Deferred();
+                                alert('before');
+                                $.ajax({
+                                        type:"Post",
+                                      url: "test.php",
+                                      data:{'info':current_value}
+                                    }).done(function() {
+                                        deferred.resolve();
+                                    }).fail(function(){
+                                        deferred.resolve();
+                                    });
+                              return deferred.promise();
+                            }
+                        }
+                });
+
+                $('.after_remover_demo').tm_editbale('init',{
+                    remove:{
+                            after:function(){
+                                alert('After Remove');
+                            }
+                        }
+                });
+
+                
+
                 
 
             });
