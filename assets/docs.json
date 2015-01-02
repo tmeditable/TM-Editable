@@ -1,0 +1,43 @@
+[{
+	"basic-theme":
+					{
+						"text":"$('#text_demo').tm_editbale('init',{});",
+						"textarea":"$('#textarea_demo').tm_editbale('init',{});",
+						"checkbox":"$('#checkbox_demo').tm_editbale('init',{});",
+						"radio":"$('#radio_demo').tm_editbale('init',{});",
+						"select":"$('#select_demo').tm_editbale('init',{});"
+					},
+	"simple-button-theme":
+					{
+						"text":"$('#text_demo').tm_editbale('init',{\n\ttheme:'simple-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"textarea":"$('#textarea_demo').tm_editbale('init',{\n\ttheme:'simple-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"checkbox":"$('#checkbox_demo').tm_editbale('init',{\n\ttheme:'simple-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"radio":"$('#radio_demo').tm_editbale('init',{\n\ttheme:'simple-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"select":"$('#select_demo').tm_editbale('init',{\n\ttheme:'simple-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:true,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});"
+					},
+	"round-button-theme":
+					{
+						"text":"$('#text_demo').tm_editbale('init',{\n\ttheme:'round-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"textarea":"$('#textarea_demo').tm_editbale('init',{\n\ttheme:'round-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"checkbox":"$('#checkbox_demo').tm_editbale('init',{\n\ttheme:'round-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"radio":"$('#radio_demo').tm_editbale('init',{\n\ttheme:'round-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"select":"$('#select_demo').tm_editbale('init',{\n\ttheme:'round-button-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});"
+					},		
+	"dotted-line-theme":
+					{
+						"text":"$('#text_demo').tm_editbale('init',{\n\ttheme:'dotted-line-theme',\n\toutside_btn:{\n\t\tonshow:\"\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\tfull_length:{\n\t\toutside:false,\n\t\tinside:true\n\t},\n\t}\n});",
+						"textarea":"$('#textarea_demo').tm_editbale('init',{\n\ttheme:'dotted-line-theme',\n\toutside_btn:{\n\t\tonshow:\"\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\tfull_length:{\n\t\toutside:false,\n\t\tinside:true\n\t},\n\t}\n});",
+						"checkbox":"$('#checkbox_demo').tm_editbale('init',{\n\ttheme:'dotted-line-theme',\n\toutside_btn:{\n\t\tonshow:\"\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\tfull_length:{\n\t\toutside:false,\n\t\tinside:true\n\t},\n\t}\n});",
+						"radio":"$('#radio_demo').tm_editbale('init',{\n\ttheme:'dotted-line-theme',\n\toutside_btn:{\n\t\tonshow:\"\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\tfull_length:{\n\t\toutside:false,\n\t\tinside:true\n\t},\n\t}\n});",
+						"select":"$('#select_demo').tm_editbale('init',{\n\ttheme:'dotted-line-theme',\n\toutside_btn:{\n\t\tonshow:\"\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\tfull_length:{\n\t\toutside:false,\n\t\tinside:true\n\t},\n\t}\n});"
+					},
+	"holo-input-theme":
+					{
+						"text":"$('#text_demo').tm_editbale('init',{\n\ttheme:'holo-input-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"textarea":"$('#textarea_demo').tm_editbale('init',{\n\ttheme:'holo-input-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"checkbox":"$('#checkbox_demo').tm_editbale('init',{\n\ttheme:'holo-input-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"radio":"$('#radio_demo').tm_editbale('init',{\n\ttheme:'holo-input-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});",
+						"select":"$('#select_demo').tm_editbale('init',{\n\ttheme:'holo-input-theme',\n\toutside_btn:{\n\t\tonshow:\"&nbsp;<i class='fa fa-pencil'></i>&nbsp;Edit&nbsp;\",\n\t\tnew_line:false,\n\t\tonhover:''\n\t},\n\tinside_btn:{\n\t\tnew_line:false,\n\t\tpull:'left',\n\t\tok:\"<i class='fa fa-check'></i>&nbsp;OK\",\n\t\tcancel:\"<i class='fa fa-times'></i>&nbsp;Cancel\"\n\t}\n});"
+					}											
+
+}]

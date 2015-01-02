@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TM Editable 1.0</title>
+        <!-- Tm library -->
+        <link rel="stylesheet" type="text/css" href="src/css/tm_editable.css">
+        <link rel="stylesheet" type="text/css" href="src/css/tm_validator.css">
+        <!-- Fonts -->
+        <link rel="stylesheet" type="text/css" href="src/css/font-awesome/font-awesome.min.css">
+      
+        <!-- Tm Themes -->
+        <link rel="stylesheet" type="text/css" href="src/css/themes/holo-input-theme.css">
+        
+        <style type="text/css">
+            h1 {text-align: center;}
+           .main_container{ width: 80%; margin: 0 auto;float: none; }
+           .span40{width: 40%; font-weight: bold; display: block; float: left;}
+           .span60{width: 60%; font-weight: normal; display: block; float: left;}
+           input[type="text"]{font-size: 12px ;line-height: 20px;}
+        </style>
+    </head>
+
+    <body >
+        
+        <h1>Basic Theme Demo</h1>
+        <div class="full_row main_container" >
+            <div class = "full_row">
+                <span class="span40">
+                    Input Text
+                </span>
+                <span class="span60">
+                    <div class="tm_editable_container input-group theme1" id="text_demo" data-iplaceholder="Type Something..">
+                        <input type="text" value ="This is text field" />
+                    </div>    
+                </span>
+            
+             
+                <span class="span40">
+                    Textarea
+                </span>
+                <span class="span60">
+                    <div class="tm_editable_container input-group" id="textarea_demo"
+                         data-iplaceholder="Type Something.." >
+                            <textarea>Detail Text Here</textarea>
+                        </div>  
+                </span>
+            
+             
+                <span class="span40">
+                    Radio
+                </span>
+                <span class="span60">
+                <div class="tm_editable_container input-group" id="radio_demo" >
+                                <span class="radio_container full_row">
+                                    <span class="single_radio full_row">
+                                        <input type="radio" name="radio_ex" value="Gmail" id="r_demo1" checked>
+                                        <label for="r_demo1">Gmail</label>
+                                    </span>
+                                    <span class="single_radio full_row">
+                                        <input type="radio" name="radio_ex" value="Yahoo" id="r_demo2">
+                                        <label for="r_demo2">Yahoo</label>
+                                    </span>
+                                    <span class="single_radio full_row">
+                                        <input type="radio" name="radio_ex" value="Facebook" id="r_demo3">
+                                        <label for="r_demo3">Facebook</label>
+                                    </span>
+                                </span>
+                        </div>    
+                </span>
+            
+             
+                <span class="span40">
+                    Checkbox
+                </span>
+                <span class="span60">
+                   <div class="tm_editable_container input-group" id="checkbox_demo">
+                                <span class="single_checkbox full_row">
+                                    <input type="checkbox" name="foo" value="bar2" id="have_gmail" checked>
+                                    <label for="have_gmail">Do you have gmail</label>
+                                </span>
+                        </div>
+                </span>
+            
+             
+                <span class="span40">
+                    Select Dropdown
+                </span>
+                <span class="span60">
+                   <div class="tm_editable_container input-group" id="select_demo">
+                        <select class="my_select">
+                            <option value="0"> Option0</option>
+                            <option value="1"> Option1</option>
+                            <option value="2" selected="selected"> Option2</option>
+                            <option value="3"> Option3</option>
+                            <option value="4"> Option4</option>
+                            <option value="5"> Option5</option>
+                        </select>
+                    </div>   
+                </span>
+            
+        </table>
+        
+ 
+        
+        <!-- Other Libraries -->
+        <script type="text/javascript" src="src/js/jquery-2.1.1.min.js"></script>
+        
+        <!-- Tm Library -->
+        <script type="text/javascript" src="src/js/tm_validator.js"></script>
+        <script type="text/javascript" src="src/js/tm_editable.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#text_demo, #textarea_demo, #checkbox_demo, #select_demo').tm_editbale('init',{
+                                    theme:'holo-input-theme',
+                                    outside_btn:{
+                                                    onshow:"&nbsp;<i class='fa fa-pencil'></i>&nbsp;",
+                                                    new_line:false,
+                                                    onhover:''
+                                                },
+                                    inside_btn:{
+                                                    new_line:false,
+                                                    ok:"<i class='fa fa-check'></i>",
+                                                    cancel:"<i class='fa fa-times'></i>"
+                                                }            
+                                });
+                setTimeout(function(){
+                            $('#radio_demo').tm_editbale('init',{
+                                    theme:'holo-input-theme',
+                                    outside_btn:{
+                                                    onshow:"&nbsp;<i class='fa fa-pencil'></i>&nbsp;",
+                                                    new_line:false,
+                                                    onhover:''
+                                                },
+                                    inside_btn:{
+                                                    new_line:false,
+                                                    ok:"<i class='fa fa-check'></i>",
+                                                    cancel:"<i class='fa fa-times'></i>"
+                                                }            
+                                });
+                },350);
+            });
+        </script>
+    </body>
+</html>

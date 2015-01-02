@@ -1,0 +1,90 @@
+.holo-input-theme{
+  min-height: 46px;
+}
+.holo-input-theme .just_edit, .holo-input-theme .just_edit input, .holo-input-theme .just_edit textarea, .holo-input-theme .ibtn_container, .holo-input-theme .no_edit, .holo-input-theme .no_edit .i_text, .holo-input-theme .i_edit{
+  font-size: 14px;
+  line-height: 22px;
+}
+.holo-input-theme .no_edit{
+  padding: 12px 10px
+}
+.holo-input-theme .just_edit{
+  padding: 7px 10px;
+}
+.holo-input-theme .no_edit:hover{
+  background: #eee
+}
+.holo-input-theme .i_edit{
+  color: #aaa;
+  font-weight: bold;
+}
+.holo-input-theme .no_edit:hover .i_edit{
+  color: #555;
+}
+.holo-input-theme .just_edit input, .holo-input-theme .just_edit textarea{
+  background: #fff;
+  position: relative;
+  vertical-align: top;
+  border: 2px solid #bdc3c7;
+  display: -moz-inline-stack;
+  display: inline-block;
+  color: #34495e;
+  outline: 0;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  outline: 0;
+  font-weight: 400;
+  padding: 5px 8px;
+}
+.holo-input-theme .just_edit input{
+  height: 30px;
+  width: 100%;
+    font-family: "Roboto", "Droid Sans", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 8px 8px 6px 8px;
+    position: relative;
+    display: block;
+    outline: none;
+    border: none;
+    background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;
+    background-size: 1px 6px, 1px 1px, 1px 6px;
+}
+.holo-input-theme .just_edit input[type="text"]:focus{
+  background: bottom left linear-gradient(#0099cc, #0099cc) no-repeat, bottom center linear-gradient(#0099cc, #0099cc) repeat-x, bottom right linear-gradient(#0099cc, #0099cc) no-repeat;
+  background-size: 1px 6px, 1px 1px, 1px 6px; 
+}
+.holo-input-theme .just_edit input[type="checkbox"],.holo-input-theme .just_edit input[type="radio"]{
+  width: auto;
+  height: 25px;
+  display: inline-block;
+}
+.holo-input-theme .no_edit .i_edit:hover{
+  text-decoration: none;
+}
+.holo-input-theme input:focus{
+  outline: #3c948b
+}
+.holo-input-theme .ibtn_container{
+  padding-left: 10px; 
+}
+.holo-input-theme .i_ok, .holo-input-theme .i_cancel{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 26px;
+  padding-left: 1px;
+  text-align: center;
+}
+.holo-input-theme .i_ok{
+  color: #5cb85c
+}
+.holo-input-theme .i_cancel{
+  color: #d9534f
+}

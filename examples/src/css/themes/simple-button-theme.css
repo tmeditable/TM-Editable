@@ -1,0 +1,100 @@
+
+/*SImple Button theme*/
+.simple-button-theme{
+  min-height: 69px;
+}
+.simple-button-theme .just_edit, .simple-button-theme .just_edit input, .simple-button-theme .just_edit textarea, .simple-button-theme .ibtn_container, .simple-button-theme .no_edit, .simple-button-theme .no_edit .i_text, .simple-button-theme .i_edit{
+  font-size: 14px;
+  line-height: 22px;
+}
+.simple-button-theme .no_edit{
+  padding: 12px 10px
+}
+.simple-button-theme .just_edit{
+  padding: 7px 10px;
+}
+.simple-button-theme .no_edit:hover{
+  background: #eee
+}
+.simple-button-theme .i_edit{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  padding: 5px 7px;
+  background: rgba(60, 148, 139,0.7);
+  color: #fff;
+  border-radius: 3px;
+}
+.simple-button-theme .no_edit:hover .i_edit{
+  background: rgba(60, 148, 139,0.9);
+  color: #fff
+}
+.simple-button-theme .just_edit input, .simple-button-theme .just_edit textarea{
+  background: #fff;
+  position: relative;
+  vertical-align: top;
+  border: 2px solid #bdc3c7;
+  display: -moz-inline-stack;
+  display: inline-block;
+  color: #34495e;
+  outline: 0;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  outline: 0;
+  font-weight: 400;
+  padding: 5px 8px;
+}
+.simple-button-theme .just_edit input{
+  height: 30px;
+}
+.simple-button-theme .just_edit input[type="checkbox"],.simple-button-theme .just_edit input[type="radio"]{
+  width: auto;
+  height: auto;
+}
+.simple-button-theme .no_edit .i_edit:hover{
+  text-decoration: none;
+}
+.simple-button-theme input:focus{
+  outline: #3c948b
+}
+.simple-button-theme .ibtn_container{
+  padding-left: 0;
+  margin-top: 8px;
+}
+.simple-button-theme .i_ok, .simple-button-theme .i_cancel, .simple-button-theme .i_remover{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  padding: 5px 7px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+.simple-button-theme .i_remover{
+  padding-left: 2px
+}
+.simple-button-theme .i_ok{
+  margin-left: 0;
+  color: #fff;
+  background: rgba(92, 184, 92,0.7);
+}
+.simple-button-theme .i_cancel, .simple-button-theme .i_remover{
+  color: #fff;
+  background: rgba(217, 83, 79,0.7);
+}
+.simple-button-theme .i_ok:hover{
+  color: #fff;
+  background: rgba(92, 184, 92,0.9);
+  text-decoration: none;
+}
+.simple-button-theme .i_cancel:hover, .simple-button-theme .i_remover:hover{
+  color: #fff;
+  background: rgba(217, 83, 79,0.9);
+  text-decoration: none;
+}

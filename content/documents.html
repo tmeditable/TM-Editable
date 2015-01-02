@@ -1,0 +1,656 @@
+<div class="col-xs-12 home_container">
+	
+	<div class="head_line full_row">
+	    <span class="just_line"></span>
+	    <span class="head_text">Documents</span>
+	</div>
+
+	<div class="box_container full_row">
+		<!-- Left Portion START -->
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="small-header-container">
+			
+			<div class="small-header full_row">
+				<div class="small-header-text-wrap">
+					<span class="small-header-text">
+						How to use?
+					</span>
+				</div>
+			</div>
+			<!-- how to use answer -->
+			<div class="answer_the_question full_row">
+				<span class="full_row">
+					To use this plugin you will have to download mentioned js and css file, and put them in your project. This plugin is dependent on jquery.
+				</span>	
+	    		<ul class="basic_ul full_row">
+					<li class="full_row">
+						<h4>Dependency</h4>
+						<div class="full_row blue">
+							<div class="full_row">
+								<pre class="prettyprint">Jquery 
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://code.jquery.com/jquery-2.1.3.min.js&quot;&gt;&lt;/script&gt;
+							</pre>
+							</div><div class="full_row">
+								<a href="http://fortawesome.github.io/Font-Awesome/"> Fontawesome for icons </a>, it's not necessory. You can use your own icons, to know how go through options.
+							</div>
+						</div>
+					</li class="full_row">
+
+					<li class="full_row">
+						<div class="full_row show_code show">
+							<div class="col-xs-6 show_html paddingleft0">
+								<h4>Plugin CSS Files</h4>
+								<div class="full_row">		
+									<div class="full_row">
+										tm_editable.css	
+									</div>
+									<div class="full_row">
+										tm_validator.css 
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 show_js paddingright0">
+								<h4>Plugin Js Files</h4>
+								<div class="full_row">
+									<div class="full_row">
+										tm_editable.js
+									</div>
+									<div class="full_row">
+										tm_validator.js	
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					
+					<li class="full_row">
+						<div class="full_row show_code show">
+							<div class="col-xs-6 show_html paddingleft0">
+								<h4>Sample HTML</h4>
+								<div class="full_row">		
+									<span class="full_row">
+										For theme wise example and code check out <a href="#/demo/basic-theme">Demo</a><br />
+											Theme wise js code is different.
+									</span>
+									<pre class="prettyprint">&lt;div class=&quot;tm_editable_container input-group theme1&quot; id=&quot;text_demo&quot; data-iplaceholder=&quot;Type Something..&quot;&gt;<br />
+		&lt;input type=&quot;text&quot; value =&quot;This is text field&quot; /&gt;<br />
+	&lt;/div&gt;					
+									</pre>
+								</div>
+							</div>
+							<div class="col-xs-6 show_js paddingright0">
+								<h4>Sample Js</h4>
+								<div class="full_row">
+									<span class="full_row">
+									Very short and simple code is needed to execute TmEditable.
+								You can apply tm_editable on any element which has class of tm_editable_container and input-group. Here in this example text demo is the jquery selector.
+									</span>
+									<pre class="prettyprint">$('.text_demo').tm_editbale('init',{});</pre>
+								</div>
+							</div>
+						</div>
+					</li>
+	
+				</ul>
+			</div>
+			<!-- how to use answer -->
+			
+			<div class="small-header full_row">
+				<div class="small-header-text-wrap">
+					<span class="small-header-text">
+						Html elements markup
+					</span>
+				</div>
+			</div>
+
+			<!-- Html Markup Start -->
+			<div class="answer_the_question full_row">
+				<div class="table-responsive">
+				  <table class="table table-bordered table-striped table-hover">
+				    <tr>
+				    	<th class="col-sm-3 col-md-2 col-lg-2">
+				    		Html Elements
+				    	</th>
+				    	<th class="col-sm-9 col-md-9 col-lg-9">
+				    		Markup
+				    	</th>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		Input Text
+				    	</td>
+				    	<td>
+				    		<pre class="prettyprint">&lt;div class=&quot;tm_editable_container input-group theme1&quot; id=&quot;text_demo&quot; data-iplaceholder=&quot;Type Something..&quot;&gt;<br />
+	&lt;input type=&quot;text&quot; value =&quot;This is text field&quot; /&gt;<br />
+&lt;/div&gt;					
+							</pre>
+				    	</td>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		Textarea
+				    	</td>
+				    	<td>
+				    		<pre class="prettyprint">&lt;div class=&quot;tm_editable_container input-group&quot; id=&quot;textarea_demo&quot; data-iplaceholder=&quot;Type Something..&quot; &gt;<br />
+	&lt;textarea&gt;Detail Text Here&lt;/textarea&gt;<br />
+&lt;/div&gt;
+									</pre>
+				    	</td>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		Checkbox
+				    	</td>
+				    	<td>
+				    		<pre class="prettyprint">&lt;div class=&quot;tm_editable_container input-group&quot; id=&quot;checkbox_demo&quot;&gt;<br />
+    &lt;span class=&quot;single_checkbox full_row&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;foo&quot; value=&quot;bar2&quot; id=&quot;have_gmail&quot; checked&gt;
+        &lt;label for=&quot;have_gmail&quot;&gt;Do you have gmail&lt;/label&gt;
+    &lt;/span&gt;<br />
+&lt;/div&gt;
+									</pre>
+				    	</td>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		Radio
+				    	</td>
+				    	<td>
+				    		<pre class="prettyprint">&lt;span class=&quot;radio_container full_row&quot;&gt;
+    &lt;span class=&quot;single_radio full_row&quot;&gt;<br />
+        &lt;input type=&quot;radio&quot; name=&quot;radio_ex&quot; value=&quot;Gmail&quot; id=&quot;r_demo1&quot; checked&gt;
+        &lt;label for=&quot;r_demo1&quot;&gt;Gmail&lt;/label&gt;
+    &lt;/span&gt;<br />
+    &lt;span class=&quot;single_radio full_row&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radio_ex&quot; value=&quot;Yahoo&quot; id=&quot;r_demo2&quot;&gt;
+        &lt;label for=&quot;r_demo2&quot;&gt;Yahoo&lt;/label&gt;
+    &lt;/span&gt;<br />
+    &lt;span class=&quot;single_radio full_row&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radio_ex&quot; value=&quot;Facebook&quot; id=&quot;r_demo3&quot;&gt;
+        &lt;label for=&quot;r_demo3&quot;&gt;Facebook&lt;/label&gt;
+    &lt;/span&gt;<br />
+&lt;/span&gt;
+									</pre>
+				    	</td>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		Select
+				    	</td>
+				    	<td>
+				    		<pre class="prettyprint">&lt;div class=&quot;tm_editable_container input-group&quot; id=&quot;select_demo&quot;&gt;
+    &lt;select class=&quot;my_select&quot;&gt;
+        &lt;option value=&quot;0&quot;&gt; Option0&lt;/option&gt;
+        &lt;option value=&quot;1&quot;&gt; Option1&lt;/option&gt;
+        &lt;option value=&quot;2&quot; selected=&quot;selected&quot;&gt; Option2&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt; Option3&lt;/option&gt;
+        &lt;option value=&quot;4&quot;&gt; Option4&lt;/option&gt;
+        &lt;option value=&quot;5&quot;&gt; Option5&lt;/option&gt;
+    &lt;/select&gt;<br />
+&lt;/div&gt;
+									</pre>
+				    	</td>
+				    </tr>
+				</table>    	
+			</div>	
+		</div>
+		<!-- Html Markup Start End -->
+
+		<div class="small-header full_row">
+				<div class="small-header-text-wrap">
+					<span class="small-header-text">
+						Theme Wise JS formats
+					</span>
+				</div>
+			</div>
+
+			<!-- Theme Start -->
+			<div class="answer_the_question full_row">
+				<div class="table-responsive">
+					<table class="table table-bordered table-striped table-hover">
+					    <tr>
+					    	<th class="col-sm-3 col-md-2 col-lg-2">
+					    		Theme name
+					    	</th>
+					    	<th class="col-sm-9 col-md-9 col-lg-9">
+					    		js format
+					    	</th>
+					    </tr>
+					    <tr>
+					    	<td>
+					    		Basic Theme
+					    	</td>
+					    	<td>
+					    		<pre class="prettyprint">{{data[0]['basic-theme']['text']}}</pre>
+					    	</td>
+					    </tr>
+					     <tr>
+					    	<td>
+					    		Simple Button Theme
+					    	</td>
+					    	<td>
+					    		<pre class="prettyprint">{{data[0]['simple-button-theme']['text']}}</pre>
+					    	</td>
+					    </tr>
+					     <tr>
+					    	<td>
+					    		Radio Button Theme
+					    	</td>
+					    	<td>
+					    		<pre class="prettyprint">{{data[0]['round-button-theme']['text']}}</pre>
+					    	</td>
+					    </tr>
+					     <tr>
+					    	<td>
+					    		Dotted Line Theme
+					    	</td>
+					    	<td>
+					    		<pre class="prettyprint">{{data[0]['dotted-line-theme']['text']}}</pre>
+					    	</td>
+					    </tr>
+					    <tr>
+					    	<td>
+					    		Holo Input Theme
+					    	</td>
+					    	<td>
+					    		<pre class="prettyprint">{{data[0]['holo-input-theme']['text']}}</pre>
+					    	</td>
+					    </tr>
+					</table>
+				</div>
+			</div>
+			<!-- Theme End -->	 		
+			
+			<div class="small-header full_row">
+				<div class="small-header-text-wrap">
+					<span class="small-header-text">
+						Options
+					</span>
+				</div>
+			</div>
+
+			<!-- Html Markup Start -->
+			<div class="answer_the_question full_row" name ="option">
+				<div class="table-responsive">
+				  <table class="table table-bordered table-striped table-hover">
+				    <tr>
+				    	<th class="col-sm-3 col-md-2 col-lg-2">
+			    			Option
+				    	</th>
+				    	<th class="col-sm-3 col-md-2 col-lg-2">
+				    		Default Value
+				    	</th>
+				    	<th class="col-sm-9 col-md-8 col-lg-8">
+				    		Description
+				    	</th>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		iplaceholder (string)
+				    	</td>
+				    	<td>
+				    		Null
+				    	</td>
+				    	<td>
+				    		placeholder for input or textarea
+				    	</td>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		ivalidate (string)
+				    	</td>
+				    	<td>
+				    		Nullable
+				    	</td>
+				    	<td>
+				    		If you want to validate before or after the submit the value, you can use this feature. Available values are <strong>text / number / email / nullable</strong>. 
+				    	</td>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		ierror (string)
+				    	</td>
+				    	<td>
+				    		Null
+				    	</td>
+				    	<td>
+				    		error message to show if validation fails.
+				    	</td>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		remover (boolean)
+				    	</td>
+				    	<td>
+				    		false
+				    	</td>
+				    	<td>
+				    		pass true if you want <strong>Delete</strong> the element.
+				    	</td>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		theme (string)
+				    	</td>
+				    	<td>
+				    		basic-theme
+				    	</td>
+				    	<td>
+				    		pass the theme name. Available values 
+				    		<strong>basic-theme / simple-button-theme / round-button-theme / dotted-line-theme / holo input theme</strong>. Or create your own custome theme and apply it. 
+				    	</td>
+				    </tr>
+				    <tr>
+				    	<td>
+				    		full_length (Obejct)
+				    	</td>
+				    	<td>
+				    		Object
+				    	</td>
+				    	<td>
+				    		<div class="full_row">
+				    			<strong>inside (boolean)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : true
+				    			</span>
+				    			<span class="full_row">
+				    				It will cover full width of parent container if you pass true in inside part, or auto width if pass the false.
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>outside (boolean)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : true
+				    			</span>
+				    			<span class="full_row">
+				    				It will cover full width of parent container if you pass true in outside part, or auto width if pass the false.
+				    			</span>
+				    		</div>
+				    		 <pre class="prettyprint">full_length:{
+	inside:true,
+	outside:true
+}
+                           </pre>
+				    	</td>
+				    </tr>
+				  
+				    <tr>
+				    	<td>
+				    		outside_btn (Obejct)
+				    	</td>
+				    	<td>
+				    		Object
+				    	</td>
+				    	<td>
+				    		<div class="full_row">
+				    			<div class="full_row">
+				    				Style the outside button
+				    			</div>
+				    			<strong>new_line (boolean)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : false
+				    			</span>
+				    			<span class="full_row">
+				    				To set outside edit button in new line.
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>pull (string)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : right
+				    			</span>
+				    			<span class="full_row">
+				    				float left or right for edit button
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>onshow (html)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : edit icon
+				    			</span>
+				    			<span class="full_row">
+				    				You can set html for outside edit button
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>onhover (html)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : Edit
+				    			</span>
+				    			<span class="full_row">
+				    				You can set html for outside edit button to show on hover the element.
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>removebtn (html)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : Delete icon
+				    			</span>
+				    			<span class="full_row">
+				    				You can set html in delete button.
+				    			</span>
+				    		</div>
+				    		 <pre class="prettyprint">outside_btn:{
+    new_line:false,
+    pull:'right',
+    onshow:"&nbsp;&nbsp;&lt;i class='fa fa-pencil'&gt;&lt;/i&gt;",
+    removebtn:"&nbsp;&nbsp;&lt;i class='fa fa-times'&gt;&lt;/i&gt;",
+    onhover:"&nbsp;Edit"
+}
+                           </pre>
+				    	</td>
+				    </tr>
+				     <tr>
+				    	<td>
+				    		inside_btn (Obejct)
+				    	</td>
+				    	<td>
+				    		Object
+				    	</td>
+				    	<td>
+				    		<div class="full_row">
+				    			<div class="full_row">
+				    				Style the inside button
+				    			</div>
+				    			<strong>new_line (boolean)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : false
+				    			</span>
+				    			<span class="full_row">
+				    				To set inside buttons in new line.
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>pull (string)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : right
+				    			</span>
+				    			<span class="full_row">
+				    				float left or right for inside buttons.
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>ok (html)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : ok icon
+				    			</span>
+				    			<span class="full_row">
+				    				You can set html for ok button
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>cancel (html)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : cancel icon
+				    			</span>
+				    			<span class="full_row">
+				    				You can set html for cancel button.
+				    			</span>
+				    		</div>
+				    		 <pre class="prettyprint">inside_btn:{
+	new_line:false,
+	pull:'right',
+	ok:"&lt;i class='fa fa-check'&gt;&lt;/i&gt;",
+	cancel:"&lt;i class='fa fa-tiems'&gt;&lt;/i&gt;"
+}
+                           </pre>
+				    	</td>
+				    </tr>
+
+				    <tr>
+				    	<td>
+				    		init (Obejct)
+				    	</td>
+				    	<td>
+				    		Object
+				    	</td>
+				    	<td>
+				    		<div class="full_row">
+				    			<strong>before (function)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : null
+				    			</span>
+				    			<span class="full_row">
+				    				To execute function before initialize the tmeditable (it means before set the html by plugin).
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>after (function)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : null
+				    			</span>
+				    			<span class="full_row">
+				    				To execute function after initialize the tmeditable (mainly used to execute external <strong>plugins</strong> ).
+				    			</span>
+				    		</div>
+				    		 <pre class="prettyprint">init:{
+    before:function(){},
+    after:function(){}
+}
+                           </pre>
+				    	</td>
+				    </tr>
+
+				     <tr>
+				    	<td>
+				    		ok (Obejct)
+				    	</td>
+				    	<td>
+				    		Object
+				    	</td>
+				    	<td>
+				    		<div class="full_row">
+				    			<strong>before (function)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : null
+				    			</span>
+				    			<span class="full_row">
+				    				To execute function before save the value (follow the format as shown in code, use of $.Deferred is necessary due to handle ajax request).
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>after (function)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : null
+				    			</span>
+				    			<span class="full_row">
+				    				To execute function after save the value.
+				    			</span>
+				    		</div>
+				    		 <pre class="prettyprint"> ok:{
+    before:function(value){
+        var deferred = $.Deferred();
+        //your code start here
+        alert(value) //value of element
+        //your code ends here
+        deferred.resolve();
+        return deferred.promise();
+    },
+    after:function(){}
+}
+                           </pre>
+				    	</td>
+				    </tr>
+
+				     <tr>
+				    	<td>
+				    		Remove (Obejct)
+				    	</td>
+				    	<td>
+				    		Object
+				    	</td>
+				    	<td>
+				    		<div class="full_row">
+				    			<strong>before (function)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : null
+				    			</span>
+				    			<span class="full_row">
+				    				To execute function before delete the element (follow the format as shown in code, use of $.Deferred is necessary due to handle ajax request).
+				    			</span>
+				    		</div>
+				    		<div class="full_row">
+				    			<strong>after (function)</strong>
+				    		</div>
+				    		<div class="full_row inside_info">
+				    			<span class="full_row">
+				    				default value : null
+				    			</span>
+				    			<span class="full_row">
+				    				To execute function after delete the element.
+				    			</span>
+				    		</div>
+				    		 <pre class="prettyprint"> remove:{
+    before:function(){
+        var deferred = $.Deferred();
+        //your code start here
+        alert('hello')
+        //your code ends here
+        deferred.resolve();
+        return deferred.promise();
+    },
+    after:function(){}
+}
+                           </pre>
+				    	</td>
+				    </tr>
+				    
+				</table>
+			</div>
+		</div>
+		<!-- Options END -->		    	
+	</div>
+	</div>
+</div>			
