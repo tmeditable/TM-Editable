@@ -2,8 +2,11 @@
 <h4> Features</h4>
 <blockquote>
   <ul>
-    <li>Html5 Input Editables</li>
-    <li></li>
-    <li></li>
+    <li>Html5 Input Inplace Editables</li>
+    <li>Delete element</li>
+    <li>Validation</li>
+    <li>Apply External Plugins</li>
+    <li>Themes Available</li>
+    <li>Events on initialize, Save and Delete</li>
   </ul>
 </blockquote>
