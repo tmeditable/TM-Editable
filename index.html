@@ -1,1 +1,180 @@
 
+<!DOCTYPE html>
+<html  data-ng-app="TmEditable">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TM-Editable 1.0</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta name="abstract" content="In-Place Editable Jquery Plugin - TM-Editable">
+        <meta name="description" content="TM-EDITABLE (1.0) is a jquery plugin, which provides In-Place edit and Delete of the html input elements with some stunning themes.">
+        <meta name="keywords" content="TM-Editable,tmeditable, TM-Editable plugin, TM-Editable jquery plugin, Editable Jquery, Editable Jquery Plugin, Custom Editable">
+
+
+        <!-- 3rd Party Library -->
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/select2/select2.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/uniform/agent/css/uniform.agent.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/uniform/aristo/css/uniform.aristo.min.css">
+        
+        <!-- Custom - Not necessory -->
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css">            
+        <link rel="stylesheet" type="text/css" href="assets/css/prettify/prettify.css">
+
+        <!-- Tm library -->
+        <link rel="stylesheet" type="text/css" href="assets/css/tm_editable.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/tm_validator.css">
+
+        <!-- Tm Themes -->
+        <link rel="stylesheet" type="text/css" href="assets/css/themes/basic-theme.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/themes/simple-button-theme.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/themes/round-button-theme.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/themes/dotted-line-theme.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/themes/holo-input-theme.css">
+        
+        <!-- Tm Favicon -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    </head>
+
+    <body data-ng-controller="Justdo">
+        
+        <div class="container-fluid" id="parent_of_all">
+            <div class="row"> 
+                <nav role="navigation transit_it" id="navigation">
+                    <div class="full_row on_front">
+                        <span class="logo_container transit_it">
+                            <a href="#" class="pull-left">
+                                <img src="assets/img/logo-black.png" class="transit_it" alt="TmEditable">
+                            </a>
+                        </span>
+                        <div class="pull-right">
+                            <nav class="main-navigation">
+                                <ul class="main-nav-ul">
+                                    <li class="main-nav-li home-main-nav-li active">
+                                        <a href="#" class="transit_it">
+                                            <span class="icon_container transit_it">
+                                                <i class="fa fa-home"></i>
+                                            </span>
+                                            <span class="text-container">
+                                                Home
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav-li demo-main-nav-li">
+                                        <a href="#/demo/basic-theme">
+                                            <span class="icon_container transit_it">
+                                                <i class="fa fa-eye"></i>
+                                            </span>
+                                            <span class="text-container">
+                                                Demo
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav-li doc-main-nav-li">
+                                        <a href="#/documents">
+                                            <span class="icon_container transit_it">
+                                                <i class="fa fa-file-code-o"></i>
+                                            </span>
+                                            <span class="text-container">
+                                                Documents
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav-li contact-main-nav-li">
+                                        <a href="https://github.com/tmeditable/TM-Editable">
+                                            <span class="icon_container transit_it">
+                                                <i class="fa fa-github"></i>
+                                            </span>
+                                            <span class="text-container">
+                                                GitHub
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div id="responsive-nav">
+                                <a class="pull-right baricon">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="on_back">
+                        <ul class="nav_ul full_row">
+                            <li class="nav_li full_row active home-main-nav-li">
+                                <a href="#" class="full_row">
+                                    <i class="fa fa-home"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav_li full_row">
+                                <a href="#/demo/basic-theme" class="full_row">
+                                    <i class="fa fa-eye"></i>
+                                    Demo
+                                </a>
+                            </li>
+                            <li class="nav_li full_row">
+                                <a href="#/documents" class="full_row">
+                                    <i class="fa fa-file-code-o"></i>
+                                    Documents
+                                </a>
+                            </li>
+                            <li class="nav_li full_row">
+                                <a href="https://github.com/tmeditable/TM-Editable" class="full_row">
+                                    <i class="fa fa-github"></i>
+                                    GitHub
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+
+                   <div ui-view="home_view"  ng-animate="'cool'" class="checkanim cool full_row all_in_container"></div>
+
+                <div class="footer full_row text-center">
+                    Plugin and website built by <a href="https://twitter.com/FARHANCHAUHAN">Farhan Chauhan</a><br>
+                    If you have any issue or suggestion about the plugin, write on <a href="">GitHub</a><br>
+                    Special thanks to <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> and <a href="http://getbootstrap.com">Bootstrap</a></br>  
+                    <!-- <i class="fa fa-copyright"></i> Farhan Chauhan 2014. --> 
+                    Released under <a href="http://opensource.org/licenses/mit-license.html">MIT License</a>. 
+                </div>   
+
+            </div>
+        </div>
+
+ 
+        
+        <!-- Angular -->
+        <script type="text/javascript" src="assets/js/angular/angular.js"></script>
+        <script type="text/javascript" src="assets/js/angular/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="assets/js/angular/angular-animate.js"></script>
+        
+        <!-- Other Libraries -->
+        <script type="text/javascript" src="assets/js/jquery/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/select2/select2.js"></script>
+        <script type="text/javascript" src="assets/js/uniform/jquery.uniform.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="assets/js/prettify/prettify.js"></script>
+       
+        <!-- Tm Themes Script -->
+        <script type="text/javascript" src="assets/js/themes/basic-theme.js"></script>
+        <script type="text/javascript" src="assets/js/themes/simple-button-theme.js"></script>
+        <script type="text/javascript" src="assets/js/themes/round-button-theme.js"></script>
+        <script type="text/javascript" src="assets/js/themes/dotted-line-theme.js"></script>
+        <script type="text/javascript" src="assets/js/themes/holo-input-theme.js"></script>
+        
+        <!-- Tm Library -->
+        <script type="text/javascript" src="assets/js/tm_validator.js"></script>
+        <script type="text/javascript" src="assets/js/tm_editable.js"></script>
+        
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        
+    </body>
+</html>
